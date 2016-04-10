@@ -1,0 +1,148 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.passed_description {background-color:#D0FFD0;font-weight:bold;font-style:italic;color:black}
+.failed_description {background-color:#FFA898;font-weight:bold;font-style:italic;color:black}
+OL { counter-reset: item }
+OL>LI { display: block }
+OL>LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: __PAGESIZE__;
+     @top-center {
+     	content: "Detailed Results Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+ol a::after {
+  content: leader('.') target-counter(attr(href), page);
+}
+</style>
+<title>Detailed Results Report</title>
+  </head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+  <h1>Overview</h1>
+<table><tr><th></th><th>Passed</th><th>Failed</th><th>Undefined</th><th>%Passed</th></tr><tr><th>Features</th><td class="passed">0</td><td class="failed">1</td><td class="undefined">0</td><td>0.00</td></tr><tr><th>Scenarios</th><td class="passed">0</td><td class="failed">3</td><td class="undefined">0</td><td>0.00</td></tr><tr><th>Steps</th><td class="passed">0</td><td class="failed">3</td><td class="undefined">9</td><td>0.00</td></tr></table><div><b>Overall Duration: 0h 00m 16s</b></div>
+<a id="top"></a><h1>Table of Contents</h1><ol><li> <span class="failed"><a href="#feature-1sorting-by-price---cheapest">sorting by price - cheapest</a></span><ol><li> <span class="failed"><a href="#sc-sorting-by-price---cheapest;1.-cheapest-first-sorting-of-train-results">1. Cheapest first sorting of Train results</a></span></li><li> <span class="failed"><a href="#sc-sorting-by-price---cheapest;2.-cheapest-first-sorting-of-flight-results">2. Cheapest first sorting of Flight results</a></span></li><li> <span class="failed"><a href="#sc-sorting-by-price---cheapest;3.-cheapest-first-sorting-of-bus-results">3. Cheapest first sorting of Bus results</a></span></li></ol></li></ol><h1>Detailed Results Report</h1><table width="700px"><tr class="failed"><td colspan="4"><b>Feature:</b> <a id="feature-1sorting-by-price---cheapest">sorting by price - cheapest</a></td></tr><tr class="failed_description"><td colspan="4"><br>As a user</br><br>
+I want the results to be sorted by price</br><br>
+So that I can decide on a price-efficient option</br></td></tr><tr class="failed"><td><small><b>Passed:</b> 0</small></td><td><small><b>Failed:</b> 3</small></td><td><small><b>Undefined:</b> 0</small></td><td><small>Duration: 16.13s</small></td></tr><tr class="failed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="failed"><td colspan="4"><b>Scenario:</b> <a id="sc-sorting-by-price---cheapest;1.-cheapest-first-sorting-of-train-results">1. Cheapest first sorting of Train results</a></td></tr><tr class="failed_description"><td colspan="4"><br></br></td></tr><tr class="failed"><td><small><b>Passed:</b> 0</small></td><td><small><b>Failed:</b> 1</small></td><td><small><b>Undefined:</b> 3</small></td><td><small>Duration: 6.38s</small></td></tr><tr class="passed"><td>Before</td><td colspan="2"></td><td width="100">0.12s</td></tr><tr class="passed"><td colspan="4"><br></br></td></tr><tr class="failed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="failed"><td><b>Given </b> I search for route from &quot;Berlin, Deutschland&quot; to &quot;Prag, Tschechien&quot; on &quot;20&quot; of next month</td><td width="100">5.54s</td></tr><tr class="failed"><td colspan="2"><div><br>org.openqa.selenium.WebDriverException: Element is not clickable at point (370, 52.69999694824219). Other element would receive the click: &lt;div class=&quot;ui-datepicker-title&quot;&gt;&lt;/div&gt;</br><br>
+Command duration or timeout: 67 milliseconds</br><br>
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'</br><br>
+System info: host: 'tubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-58-generic', java.version: '1.8.0_77'</br><br>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver</br><br>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]</br><br>
+Session ID: cbb111bf-5d1b-4889-b3c2-be45a8cab8e1</br><br>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)</br><br>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)</br><br>
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)</br><br>
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)</br><br>
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)</br><br>
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)</br><br>
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)</br><br>
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)</br><br>
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)</br><br>
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</br><br>
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)</br><br>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</br><br>
+	at java.lang.reflect.Method.invoke(Method.java:498)</br><br>
+	at org.openqa.selenium.support.events.EventFiringWebDriver&#36;EventFiringWebElement&#36;1.invoke(EventFiringWebDriver.java:335)</br><br>
+	at com.sun.proxy.&#36;Proxy21.click(Unknown Source)</br><br>
+	at org.openqa.selenium.support.events.EventFiringWebDriver&#36;EventFiringWebElement.click(EventFiringWebDriver.java:348)</br><br>
+	at com.goeuro.bddAutomation.HomePage.i_search_for_route_from_to_on_of_next_month(HomePage.java:33)</br><br>
+	at &#10045;.Given I search for route from &quot;Berlin, Deutschland&quot; to &quot;Prag, Tschechien&quot; on &quot;20&quot; of next month(resultsSortedByPrice.feature:7)</br><br>
+</br></div></td></tr><tr class="skipped"><td><b>When </b> I sort by cheapest price</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>And </b> I select results for &quot;train&quot;</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>Then </b> I should see a price sorted options with cheapest first</td><td width="100">0.00s</td></tr><tr class="skipped"><td colspan="2"><img src="target/reportssorting-by-price---cheapest_1.-cheapest-first-sorting-of-train-results1460317677312.png"  /></td></tr></table></td></tr><tr class="passed"><td>After</td><td colspan="2"></td><td width="100">0.72s</td></tr><tr class="passed"><td colspan="4"><br></br></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr><tr class="failed"><td colspan="4"><b>Scenario:</b> <a id="sc-sorting-by-price---cheapest;2.-cheapest-first-sorting-of-flight-results">2. Cheapest first sorting of Flight results</a></td></tr><tr class="failed_description"><td colspan="4"><br></br></td></tr><tr class="failed"><td><small><b>Passed:</b> 0</small></td><td><small><b>Failed:</b> 1</small></td><td><small><b>Undefined:</b> 3</small></td><td><small>Duration: 6.03s</small></td></tr><tr class="passed"><td>Before</td><td colspan="2"></td><td width="100">0.01s</td></tr><tr class="passed"><td colspan="4"><br></br></td></tr><tr class="failed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="failed"><td><b>Given </b> I search for route from &quot;Berlin, Deutschland&quot; to &quot;Prag, Tschechien&quot; on &quot;20&quot; of next month</td><td width="100">5.28s</td></tr><tr class="failed"><td colspan="2"><div><br>org.openqa.selenium.WebDriverException: Element is not clickable at point (370, 52.69999694824219). Other element would receive the click: &lt;div class=&quot;ui-datepicker-title&quot;&gt;&lt;/div&gt;</br><br>
+Command duration or timeout: 68 milliseconds</br><br>
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'</br><br>
+System info: host: 'tubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-58-generic', java.version: '1.8.0_77'</br><br>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver</br><br>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]</br><br>
+Session ID: cbb111bf-5d1b-4889-b3c2-be45a8cab8e1</br><br>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)</br><br>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)</br><br>
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)</br><br>
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)</br><br>
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)</br><br>
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)</br><br>
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)</br><br>
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)</br><br>
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)</br><br>
+	at sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)</br><br>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</br><br>
+	at java.lang.reflect.Method.invoke(Method.java:498)</br><br>
+	at org.openqa.selenium.support.events.EventFiringWebDriver&#36;EventFiringWebElement&#36;1.invoke(EventFiringWebDriver.java:335)</br><br>
+	at com.sun.proxy.&#36;Proxy21.click(Unknown Source)</br><br>
+	at org.openqa.selenium.support.events.EventFiringWebDriver&#36;EventFiringWebElement.click(EventFiringWebDriver.java:348)</br><br>
+	at com.goeuro.bddAutomation.HomePage.i_search_for_route_from_to_on_of_next_month(HomePage.java:33)</br><br>
+	at &#10045;.Given I search for route from &quot;Berlin, Deutschland&quot; to &quot;Prag, Tschechien&quot; on &quot;20&quot; of next month(resultsSortedByPrice.feature:13)</br><br>
+</br></div></td></tr><tr class="skipped"><td><b>When </b> I sort by cheapest price</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>And </b> I select results for &quot;flight&quot;</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>Then </b> I should see a price sorted options with cheapest first</td><td width="100">0.00s</td></tr><tr class="skipped"><td colspan="2"><img src="target/reportssorting-by-price---cheapest_2.-cheapest-first-sorting-of-flight-results1460317677314.png"  /></td></tr></table></td></tr><tr class="passed"><td>After</td><td colspan="2"></td><td width="100">0.74s</td></tr><tr class="passed"><td colspan="4"><br></br></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr><tr class="failed"><td colspan="4"><b>Scenario:</b> <a id="sc-sorting-by-price---cheapest;3.-cheapest-first-sorting-of-bus-results">3. Cheapest first sorting of Bus results</a></td></tr><tr class="failed_description"><td colspan="4"><br></br></td></tr><tr class="failed"><td><small><b>Passed:</b> 0</small></td><td><small><b>Failed:</b> 1</small></td><td><small><b>Undefined:</b> 3</small></td><td><small>Duration: 3.72s</small></td></tr><tr class="passed"><td>Before</td><td colspan="2"></td><td width="100">0.01s</td></tr><tr class="passed"><td colspan="4"><br></br></td></tr><tr class="failed"><td colspan="4" style="padding-left:20px"> <table width="100%"><tr class="failed"><td><b>Given </b> I search for route from &quot;Berlin, Deutschland&quot; to &quot;Prag, Tschechien&quot; on &quot;20&quot; of next month</td><td width="100">3.62s</td></tr><tr class="failed"><td colspan="2"><div><br>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;to_filter&quot;}</br><br>
+Command duration or timeout: 50 milliseconds</br><br>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html</br><br>
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'</br><br>
+System info: host: 'tubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-58-generic', java.version: '1.8.0_77'</br><br>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver</br><br>
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.1, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]</br><br>
+Session ID: cbb111bf-5d1b-4889-b3c2-be45a8cab8e1</br><br>
+*** Element info: {Using=name, value=to_filter}</br><br>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)</br><br>
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)</br><br>
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)</br><br>
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)</br><br>
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)</br><br>
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)</br><br>
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)</br><br>
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)</br><br>
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:461)</br><br>
+	at org.openqa.selenium.By&#36;ByName.findElement(By.java:303)</br><br>
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)</br><br>
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)</br><br>
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)</br><br>
+	at java.lang.reflect.Method.invoke(Method.java:498)</br><br>
+	at org.openqa.selenium.support.events.EventFiringWebDriver&#36;2.invoke(EventFiringWebDriver.java:103)</br><br>
+	at com.sun.proxy.&#36;Proxy20.findElement(Unknown Source)</br><br>
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:188)</br><br>
+	at com.goeuro.bddAutomation.HomePage.i_search_for_route_from_to_on_of_next_month(HomePage.java:29)</br><br>
+	at &#10045;.Given I search for route from &quot;Berlin, Deutschland&quot; to &quot;Prag, Tschechien&quot; on &quot;20&quot; of next month(resultsSortedByPrice.feature:19)</br><br>
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;to_filter&quot;}</br><br>
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html</br><br>
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'</br><br>
+System info: host: 'tubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.19.0-58-generic', java.version: '1.8.0_77'</br><br>
+Driver info: driver.version: unknown</br><br>
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///tmp/anonymous1544132624389815000webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)</br><br>
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///tmp/anonymous1544132624389815000webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)</br><br>
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///tmp/anonymous1544132624389815000webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)</br><br>
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///tmp/anonymous1544132624389815000webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)</br><br>
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///tmp/anonymous1544132624389815000webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</br><br>
+</br></div></td></tr><tr class="skipped"><td><b>When </b> I sort by cheapest price</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>And </b> I select results for &quot;bus&quot;</td><td width="100">0.00s</td></tr><tr class="skipped"><td><b>Then </b> I should see a price sorted options with cheapest first</td><td width="100">0.00s</td></tr><tr class="skipped"><td colspan="2"><img src="target/reportssorting-by-price---cheapest_3.-cheapest-first-sorting-of-bus-results1460317677316.png"  /></td></tr></table></td></tr><tr class="passed"><td>After</td><td colspan="2"></td><td width="100">0.10s</td></tr><tr class="passed"><td colspan="4"><br></br></td></tr><tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr></table></td></tr><tr><td colspan="5"></td></tr></table>
+	</body>
+</html>

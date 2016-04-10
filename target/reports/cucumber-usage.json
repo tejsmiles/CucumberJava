@@ -1,0 +1,56 @@
+[
+  {
+    "source": "^I search for route from \"([^\"]*)\" to \"([^\"]*)\" on \"([^\"]*)\" of next month$",
+    "steps": [
+      {
+        "name": "I search for route from \"Berlin, Deutschland\" to \"Prag, Tschechien\" on \"20\" of next month",
+        "aggregatedDurations": {
+          "average": 43.926663546,
+          "median": 43.926663546
+        },
+        "durations": [
+          {
+            "duration": 43.926663546,
+            "location": "resultsSortedByPrice.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I select results for \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I select results for \"train\"",
+        "aggregatedDurations": {
+          "average": 0.351212043,
+          "median": 0.351212043
+        },
+        "durations": [
+          {
+            "duration": 0.351212043,
+            "location": "resultsSortedByPrice.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I sort by cheapest price$",
+    "steps": [
+      {
+        "name": "I sort by cheapest price",
+        "aggregatedDurations": {
+          "average": 0.276434395,
+          "median": 0.276434395
+        },
+        "durations": [
+          {
+            "duration": 0.276434395,
+            "location": "resultsSortedByPrice.feature:8"
+          }
+        ]
+      }
+    ]
+  }
+]
