@@ -1,0 +1,124 @@
+[
+  {
+    "source": "^I search for route from \"([^\"]*)\" to \"([^\"]*)\" on \"([^\"]*)\" of next month$",
+    "steps": [
+      {
+        "name": "I search for route from \"Berlin, Deutschland\" to \"Prag, Tschechien\" on \"20\" of next month",
+        "aggregatedDurations": {
+          "average": 22.535557516,
+          "median": 17.12292453
+        },
+        "durations": [
+          {
+            "duration": 40.176888912,
+            "location": "resultsSortedByPrice.feature:7"
+          },
+          {
+            "duration": 10.306859106,
+            "location": "resultsSortedByPrice.feature:13"
+          },
+          {
+            "duration": 17.12292453,
+            "location": "resultsSortedByPrice.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should see a price sorted options with cheapest first$",
+    "steps": [
+      {
+        "name": "I should see a price sorted options with cheapest first",
+        "aggregatedDurations": {
+          "average": 0.704581796,
+          "median": 0.694491975
+        },
+        "durations": [
+          {
+            "duration": 0.739112692,
+            "location": "resultsSortedByPrice.feature:10"
+          },
+          {
+            "duration": 0.680140723,
+            "location": "resultsSortedByPrice.feature:16"
+          },
+          {
+            "duration": 0.694491975,
+            "location": "resultsSortedByPrice.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I select results for \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I select results for \"train\"",
+        "aggregatedDurations": {
+          "average": 0.333867723,
+          "median": 0.333867723
+        },
+        "durations": [
+          {
+            "duration": 0.333867723,
+            "location": "resultsSortedByPrice.feature:9"
+          }
+        ]
+      },
+      {
+        "name": "I select results for \"flight\"",
+        "aggregatedDurations": {
+          "average": 0.299430488,
+          "median": 0.299430488
+        },
+        "durations": [
+          {
+            "duration": 0.299430488,
+            "location": "resultsSortedByPrice.feature:15"
+          }
+        ]
+      },
+      {
+        "name": "I select results for \"bus\"",
+        "aggregatedDurations": {
+          "average": 0.312107411,
+          "median": 0.312107411
+        },
+        "durations": [
+          {
+            "duration": 0.312107411,
+            "location": "resultsSortedByPrice.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I sort by cheapest price$",
+    "steps": [
+      {
+        "name": "I sort by cheapest price",
+        "aggregatedDurations": {
+          "average": 0.72261638,
+          "median": 0.632961019
+        },
+        "durations": [
+          {
+            "duration": 1.041445633,
+            "location": "resultsSortedByPrice.feature:8"
+          },
+          {
+            "duration": 0.49344249,
+            "location": "resultsSortedByPrice.feature:14"
+          },
+          {
+            "duration": 0.632961019,
+            "location": "resultsSortedByPrice.feature:20"
+          }
+        ]
+      }
+    ]
+  }
+]

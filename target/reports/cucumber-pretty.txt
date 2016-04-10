@@ -1,0 +1,22 @@
+Feature: sorting by price - cheapest
+  As a user
+  I want the results to be sorted by price
+  So that I can decide on a price-efficient option
+
+  Scenario: 1. Cheapest first sorting of Train results                                              [90m# resultsSortedByPrice.feature:6[0m
+    [32mGiven [0m[32mI search for route from "[0m[32m[1mBerlin, Deutschland[0m[32m" to "[0m[32m[1mPrag, Tschechien[0m[32m" on "[0m[32m[1m20[0m[32m" of next month[0m [90m# HomePage.i_search_for_route_from_to_on_of_next_month(String,String,String)[0m
+    [32mWhen [0m[32mI sort by cheapest price[0m                                                                   [90m# ResultsPage.sort_by_cheapest_price()[0m
+    [32mAnd [0m[32mI select results for "[0m[32m[1mtrain[0m[32m"[0m                                                                [90m# ResultsPage.select_results_for(String)[0m
+    [32mThen [0m[32mI should see a price sorted options with cheapest first[0m                                    [90m# ResultsPage.should_see_a_price_sorted_options_with_cheapest_first()[0m
+
+  Scenario: 2. Cheapest first sorting of Flight results                                             [90m# resultsSortedByPrice.feature:12[0m
+    [32mGiven [0m[32mI search for route from "[0m[32m[1mBerlin, Deutschland[0m[32m" to "[0m[32m[1mPrag, Tschechien[0m[32m" on "[0m[32m[1m20[0m[32m" of next month[0m [90m# HomePage.i_search_for_route_from_to_on_of_next_month(String,String,String)[0m
+    [32mWhen [0m[32mI sort by cheapest price[0m                                                                   [90m# ResultsPage.sort_by_cheapest_price()[0m
+    [32mAnd [0m[32mI select results for "[0m[32m[1mflight[0m[32m"[0m                                                               [90m# ResultsPage.select_results_for(String)[0m
+    [32mThen [0m[32mI should see a price sorted options with cheapest first[0m                                    [90m# ResultsPage.should_see_a_price_sorted_options_with_cheapest_first()[0m
+
+  Scenario: 3. Cheapest first sorting of Bus results                                                [90m# resultsSortedByPrice.feature:18[0m
+    [32mGiven [0m[32mI search for route from "[0m[32m[1mBerlin, Deutschland[0m[32m" to "[0m[32m[1mPrag, Tschechien[0m[32m" on "[0m[32m[1m20[0m[32m" of next month[0m [90m# HomePage.i_search_for_route_from_to_on_of_next_month(String,String,String)[0m
+    [32mWhen [0m[32mI sort by cheapest price[0m                                                                   [90m# ResultsPage.sort_by_cheapest_price()[0m
+    [32mAnd [0m[32mI select results for "[0m[32m[1mbus[0m[32m"[0m                                                                  [90m# ResultsPage.select_results_for(String)[0m
+    [32mThen [0m[32mI should see a price sorted options with cheapest first[0m                                    [90m# ResultsPage.should_see_a_price_sorted_options_with_cheapest_first()[0m

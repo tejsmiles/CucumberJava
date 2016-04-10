@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="76.851946">
+<testcase classname="sorting by price - cheapest" name="1. Cheapest first sorting of Train results" time="45.561922">
+<system-out><![CDATA[Given I search for route from "Berlin, Deutschland" to "Prag, Tschechien" on "20" of next month.passed
+When I sort by cheapest price...............................................passed
+And I select results for "train"............................................passed
+Then I should see a price sorted options with cheapest first................passed
+]]></system-out>
+</testcase>
+<testcase classname="sorting by price - cheapest" name="2. Cheapest first sorting of Flight results" time="12.161466">
+<system-out><![CDATA[Given I search for route from "Berlin, Deutschland" to "Prag, Tschechien" on "20" of next month.passed
+When I sort by cheapest price...............................................passed
+And I select results for "flight"...........................................passed
+Then I should see a price sorted options with cheapest first................passed
+]]></system-out>
+</testcase>
+<testcase classname="sorting by price - cheapest" name="3. Cheapest first sorting of Bus results" time="19.128558">
+<system-out><![CDATA[Given I search for route from "Berlin, Deutschland" to "Prag, Tschechien" on "20" of next month.passed
+When I sort by cheapest price...............................................passed
+And I select results for "bus"..............................................passed
+Then I should see a price sorted options with cheapest first................passed
+]]></system-out>
+</testcase>
+</testsuite>
