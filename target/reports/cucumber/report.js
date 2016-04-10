@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2740589932,
+  "duration": 2955648588,
   "status": "passed"
 });
 formatter.scenario({
@@ -56,14 +56,14 @@ formatter.match({
   "location": "HomePage.i_search_for_route_from_to_on_of_next_month(String,String,String)"
 });
 formatter.result({
-  "duration": 44597232100,
+  "duration": 40176888912,
   "status": "passed"
 });
 formatter.match({
   "location": "ResultsPage.sort_by_cheapest_price()"
 });
 formatter.result({
-  "duration": 1294520459,
+  "duration": 1041445633,
   "status": "passed"
 });
 formatter.match({
@@ -76,23 +76,23 @@ formatter.match({
   "location": "ResultsPage.select_results_for(String)"
 });
 formatter.result({
-  "duration": 576465759,
+  "duration": 333867723,
   "status": "passed"
 });
 formatter.match({
   "location": "ResultsPage.should_see_a_price_sorted_options_with_cheapest_first()"
 });
 formatter.result({
-  "duration": 543097876,
+  "duration": 739112692,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 316179976,
+  "duration": 314958463,
   "status": "passed"
 });
 formatter.before({
-  "duration": 15564001,
+  "duration": 17716531,
   "status": "passed"
 });
 formatter.scenario({
@@ -141,14 +141,14 @@ formatter.match({
   "location": "HomePage.i_search_for_route_from_to_on_of_next_month(String,String,String)"
 });
 formatter.result({
-  "duration": 9439904121,
+  "duration": 10306859106,
   "status": "passed"
 });
 formatter.match({
   "location": "ResultsPage.sort_by_cheapest_price()"
 });
 formatter.result({
-  "duration": 694578820,
+  "duration": 493442490,
   "status": "passed"
 });
 formatter.match({
@@ -161,23 +161,23 @@ formatter.match({
   "location": "ResultsPage.select_results_for(String)"
 });
 formatter.result({
-  "duration": 550811057,
+  "duration": 299430488,
   "status": "passed"
 });
 formatter.match({
   "location": "ResultsPage.should_see_a_price_sorted_options_with_cheapest_first()"
 });
 formatter.result({
-  "duration": 1121500388,
+  "duration": 680140723,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded1.png");
 formatter.after({
-  "duration": 387162686,
+  "duration": 363876420,
   "status": "passed"
 });
 formatter.before({
-  "duration": 36231955,
+  "duration": 61521560,
   "status": "passed"
 });
 formatter.scenario({
@@ -226,14 +226,14 @@ formatter.match({
   "location": "HomePage.i_search_for_route_from_to_on_of_next_month(String,String,String)"
 });
 formatter.result({
-  "duration": 9877720495,
+  "duration": 17122924530,
   "status": "passed"
 });
 formatter.match({
   "location": "ResultsPage.sort_by_cheapest_price()"
 });
 formatter.result({
-  "duration": 754158522,
+  "duration": 632961019,
   "status": "passed"
 });
 formatter.match({
@@ -246,19 +246,19 @@ formatter.match({
   "location": "ResultsPage.select_results_for(String)"
 });
 formatter.result({
-  "duration": 525132645,
+  "duration": 312107411,
   "status": "passed"
 });
 formatter.match({
   "location": "ResultsPage.should_see_a_price_sorted_options_with_cheapest_first()"
 });
 formatter.result({
-  "duration": 666817739,
+  "duration": 694491975,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded2.png");
 formatter.after({
-  "duration": 301375290,
+  "duration": 304551121,
   "status": "passed"
 });
 });

@@ -29,7 +29,7 @@ public class SharedDriver  extends EventFiringWebDriver{
 
     public SharedDriver() {
         super(REAL_DRIVER);
-        REAL_DRIVER.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        REAL_DRIVER.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 
     }
 
     @Override
