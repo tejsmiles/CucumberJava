@@ -18,6 +18,7 @@ public class ResultsPage {
 	private By sortCheapest = By.id("sortby-price");
 	private By trainTab = By.id("tab_train");
 	private By flightTab = By.id("tab_flight");
+	private By busTab = By.id("tab_bus");
 	private By activeResultPrices = By.xpath(".//*[@id='results']/div[@class='active']//table[@class='result-grid']//span[@class='price-no ']");
 	private By priceBeforeDecimal = By.className("currency-beforecomma");
 	private By priceAfterDecimal = By.className("currency-decimals");
@@ -37,6 +38,8 @@ public class ResultsPage {
 			driver.findElement(trainTab).click();
 		}else if(travelMedium.equalsIgnoreCase("flight")){
 			driver.findElement(flightTab).click();
+		}else if(travelMedium.equalsIgnoreCase("bus")){
+			driver.findElement(busTab).click();
 		}
 	}
 
