@@ -5,13 +5,47 @@
       {
         "name": "I search for route from \"Berlin, Deutschland\" to \"Prag, Tschechien\" on \"20\" of next month",
         "aggregatedDurations": {
-          "average": 43.926663546,
-          "median": 43.926663546
+          "average": 21.304952238,
+          "median": 9.877720495
         },
         "durations": [
           {
-            "duration": 43.926663546,
+            "duration": 44.5972321,
             "location": "resultsSortedByPrice.feature:7"
+          },
+          {
+            "duration": 9.439904121,
+            "location": "resultsSortedByPrice.feature:13"
+          },
+          {
+            "duration": 9.877720495,
+            "location": "resultsSortedByPrice.feature:19"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should see a price sorted options with cheapest first$",
+    "steps": [
+      {
+        "name": "I should see a price sorted options with cheapest first",
+        "aggregatedDurations": {
+          "average": 0.777138667,
+          "median": 0.666817739
+        },
+        "durations": [
+          {
+            "duration": 0.543097876,
+            "location": "resultsSortedByPrice.feature:10"
+          },
+          {
+            "duration": 1.121500388,
+            "location": "resultsSortedByPrice.feature:16"
+          },
+          {
+            "duration": 0.666817739,
+            "location": "resultsSortedByPrice.feature:22"
           }
         ]
       }
@@ -23,13 +57,39 @@
       {
         "name": "I select results for \"train\"",
         "aggregatedDurations": {
-          "average": 0.351212043,
-          "median": 0.351212043
+          "average": 0.576465759,
+          "median": 0.576465759
         },
         "durations": [
           {
-            "duration": 0.351212043,
+            "duration": 0.576465759,
             "location": "resultsSortedByPrice.feature:9"
+          }
+        ]
+      },
+      {
+        "name": "I select results for \"flight\"",
+        "aggregatedDurations": {
+          "average": 0.550811057,
+          "median": 0.550811057
+        },
+        "durations": [
+          {
+            "duration": 0.550811057,
+            "location": "resultsSortedByPrice.feature:15"
+          }
+        ]
+      },
+      {
+        "name": "I select results for \"bus\"",
+        "aggregatedDurations": {
+          "average": 0.525132645,
+          "median": 0.525132645
+        },
+        "durations": [
+          {
+            "duration": 0.525132645,
+            "location": "resultsSortedByPrice.feature:21"
           }
         ]
       }
@@ -41,13 +101,21 @@
       {
         "name": "I sort by cheapest price",
         "aggregatedDurations": {
-          "average": 0.276434395,
-          "median": 0.276434395
+          "average": 0.914419267,
+          "median": 0.754158522
         },
         "durations": [
           {
-            "duration": 0.276434395,
+            "duration": 1.294520459,
             "location": "resultsSortedByPrice.feature:8"
+          },
+          {
+            "duration": 0.69457882,
+            "location": "resultsSortedByPrice.feature:14"
+          },
+          {
+            "duration": 0.754158522,
+            "location": "resultsSortedByPrice.feature:20"
           }
         ]
       }
